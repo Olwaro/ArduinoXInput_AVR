@@ -2,5 +2,5 @@
     "name": "framework-arduino-avr-xinput",
     "description": "Arduino Wiring-based Framework (AVR Core, with XInput)",
     "url": "https://github.com/Olwaro/ArduinoXInput_AVR",
-    "version": "v1.0.1"
+    "version": "v1.0.2"
 }
