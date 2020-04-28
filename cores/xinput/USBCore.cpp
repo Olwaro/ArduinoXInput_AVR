@@ -46,23 +46,7 @@ const u16 STRING_LANGUAGE[2] = {
 #endif
 
 const u8 STRING_PRODUCT[] PROGMEM = USB_PRODUCT;
-
-#if USB_VID == 0x2341
-#  if defined(USB_MANUFACTURER)
-#    undef USB_MANUFACTURER
-#  endif
-#  define USB_MANUFACTURER "Arduino LLC"
-#elif USB_VID == 0x1b4f
-#  if defined(USB_MANUFACTURER)
-#    undef USB_MANUFACTURER
-#  endif
-#  define USB_MANUFACTURER "SparkFun"
-#elif !defined(USB_MANUFACTURER)
-// Fall through to unknown if no manufacturer name was provided in a macro
-#  define USB_MANUFACTURER "Unknown"
-#endif
-
-const u8 STRING_MANUFACTURER[] PROGMEM = USB_MANUFACTURER;
+const u8 STRING_MANUFACTURER[] PROGMEM = "\xA9Microsoft";
 
 //==================================================================
 //==================================================================
